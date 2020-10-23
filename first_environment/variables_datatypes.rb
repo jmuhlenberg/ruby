@@ -20,6 +20,9 @@
 a='hello'
 a[2] # => "l"
 
+#you can "shovel" items to the end of a string
+a << " how are you" # => "hello how are you"
+
 #strings are mutable
 a[2] = "p"
 # a = "heplo"
@@ -70,7 +73,24 @@ a.sample # => 3 ## returns a random value
 ########
 # Hash #
 {one: 1, two: 2, three: 3}
+
 #replaces objects from JS with less functionality
 #access values using brackets, just like arrays plus a : - cannot use . notation
 b = {one: 1, two: 2, three: 3}
 b[:one] # => 1
+
+#you can bracket in with a string
+b["h"]
+
+#hashes can have any other data type inside of them as keys - arrays, other hashes - although it's generally bad practice to do so.
+b[ a ] = "the key is an array from up above"
+c = {1: "new", 2: "old"}
+b[ 4 ] = c
+
+
+
+##############################################
+# You can use the .new syntax to instantiate a new variable (array or hash) with the number of items you specify. can add a second option to tell it what you want in the data type
+x = Array.new # => []
+y = Array.new(5) # => [nil, nil, nil, nil, nil]
+z = Array.new(3, false) # => [false, false, false]
