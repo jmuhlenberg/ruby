@@ -1,0 +1,18 @@
+  [1m[35m (409.7ms)[0m  [1m[35mCREATE DATABASE "smartly_development" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (399.2ms)[0m  [1m[35mCREATE DATABASE "smartly_test" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/" for ::1 at 2020-10-24 17:11:53 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (11.9ms)
+Completed 200 OK in 52ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/welcome" for ::1 at 2020-10-24 17:12:13 -0400
+Processing by StaticController#welcome as HTML
+  Rendering static/whatsnew.html.erb within layouts/application
+  Rendered static/whatsnew.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3731ms (Views: 3730.7ms | ActiveRecord: 0.0ms)
+
+
